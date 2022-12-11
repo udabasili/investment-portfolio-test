@@ -22,18 +22,14 @@ html {
 @media screen and (max-width:1200px) {
     html {
         font-size: 56.25%; /**1 rem = 9px, 9/16 = 56.25*/
-
     }
-
 }
 
 @media screen and (max-width:900px) {
     html {
          font-size: 50%; /**1 rem = 8px, 8/16 = 50*/
 
-
     }
-
 }
 
 h1 {
@@ -43,13 +39,12 @@ h1 {
     display: block;
     font-size: 6.2rem;
     font-weight: bolder;
-
 }
 
 @media screen and (max-width: 900px) {
     h1 {
-			font-family: 5rem;
-		}
+		font-family: 5rem;
+	}
 }
 
 h2 {
@@ -68,7 +63,7 @@ h3 {
 	text-transform: capitalize;
 }
 
-  p {
+p {
 	font-size: 1.6rem;
 
 }
