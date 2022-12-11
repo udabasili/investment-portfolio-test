@@ -1,0 +1,14 @@
+MongoDB
+username investment-portfolio-test
+password zEaIABdlXAExwG5V
+
+string mongodb+srv://investment-portfolio-test:zEaIABdlXAExwG5V@cluster0.qyhw5gi.mongodb.net/?retryWrites=true&w=majority
+
+…
+mongoimport --uri "mongodb+srv://investment-portfolio-test:zEaIABdlXAExwG5V@cluster0.qyhw5gi.mongodb.net/?retryWrites=true&w=majority" --type CSV  --collection investment --drop --file client_test.csv --headerline
+
+Collection name is investment
+
+Home <https://venngage.com/templates/diagrams/investment-app-landing-page-f2753fc3-e01d-464e-9e9d-a7df05d6c9fc> <https://www.vectorstock.com/royalty-free-vector/financial-investment-strategy-landing-page-vector-22852287>
+
+Theme <http://preview.olanding.com/?theme=finance-landing-page-template>
