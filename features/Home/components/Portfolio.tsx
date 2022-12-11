@@ -7,6 +7,7 @@ import useSwr from 'swr';
 import { ibmPlexSansCondensed, ibmPlexSans } from '@/assets/fonts';
 import { BarChart, PortfolioContainer, PortfolioDescription, Slider } from './index.styled';
 import { fetcher } from '@/lib/fetch';
+import { Spinner } from '@/components/Elements';
 
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
@@ -67,8 +68,19 @@ export const Portfolio = () => {
 		setRisk(Number(e.target.value));
 	}
 
-	if (error) return <div>Failed to load</div>;
-	if (!error && !data) return <div>Loading...</div>;
+	if (error) {
+		console.log(error);
+		return <div>Failed to load</div>;
+	}
+
+	if (!error && !data) {
+		return (
+			<PortfolioContainer className="spinner">
+				<Spinner size="lg" variant="light" />
+			</PortfolioContainer>
+		);
+	}
+
 	return (
 		<PortfolioContainer id="portfolio">
 			<Slider>

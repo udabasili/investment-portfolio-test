@@ -57,7 +57,13 @@ export const PortfolioContainer = styled(Section)`
 	flex-direction: column;
 	align-items: center;
 	padding: 3rem;
+	min-height: 50vh;
 
+	&.spinner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	${devices.tabPort} {
 		padding: 3rem 0;
 	}
